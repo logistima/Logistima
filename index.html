@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="icon" href="/imgs/logo/icon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" sizes="300*300">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Logistima</title>
 </head>
 <body>
     <!--menu bar and logo-->
     <nav>
         <img class="logo" src="/imgs/logo/logo.png" alt="">
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">SERVICES</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
-
-        <div>
-            <button class="log">Login</button>
-            <button class="reg">Sign up</button>
+            </div>
+                <button class="log">Login</button>
+                <button class="reg">Sign up</button>
+            </div>
         </div>
-        
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
     <section>

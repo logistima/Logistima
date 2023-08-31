@@ -1,0 +1,14 @@
+    <!--the form lead to home or reset password or log into old acount-->
+    <section class="login" id="login">
+        <form action="">
+            <input type="text" placeholder="first name" class="name" required>
+            <input type="text" placeholder="last name" class="name" required>
+            <br>
+            <input class="longbar" type="email" placeholder="email" required>
+            <br>
+            <input class="longbar" type="pasword" placeholder="password" required>
+            <br>
+            <a href="password.html">forget your password?</a><br>
+            <a href="password.html">do you have an acount</a><br>
+            <button class="btn">login</button>
+        </form>

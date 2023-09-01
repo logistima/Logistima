@@ -1,4 +1,5 @@
 /*****************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 /*the basic style for all pages*/
 *{
     padding: 0;
@@ -89,7 +90,7 @@ button{
     display: none;
 }
 /*****************************************************************************/
-
+/* navbar media */
 @media(max-width: 700px){
     nav .fa { 
         margin: 20px;
@@ -144,26 +145,65 @@ button{
     }
 }
 /*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/* landing page / home page */
 .langing{
     overflow: hidden;
 }
-
-.obj{position: absolute;
-    width: 550px;
+.maintext{
+    width:45%;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    
+}
+.maintext h1{
+    font-size: 60px;
+    font-family: 'Holtwood One SC', serif;
+    color: var(--brown);
+}
+.maintext p{
+    font-size: 20px;
+    font-family: 'Holtwood One SC', serif;
+    color: var(--second);
+}
+.maintext form input{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    height: 40px;
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.maintext form button{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: var(--brown);
+    color: white;
+}
+.obj{
+    position: absolute;
+    width: 600px;
     top: 40%;
     right: 3%;
     z-index: -10;
 }
 .circle {
-
     background: var(--second);
     border-radius: 50%;
     width: 600px;
     height: 600px;
     position: relative;
     top: 20%;
-    right: -55px;
+    left: 62%;
     z-index: -12;
 }
-
+/*****************************************************************************/
    

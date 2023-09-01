@@ -51,7 +51,7 @@ nav li a:hover{
     margin-left: 40px;
 }
 /*buttens*/
-div{
+.btn{
     display: flex;
     margin-inline-start: auto;
 }
@@ -85,10 +85,12 @@ button{
   nav .fa {
     display: none;
 }
-
+.hidenbtn{
+    display: none;
+}
 /*****************************************************************************/
 
-@media(max-width: 950px){
+@media(max-width: 700px){
     nav .fa { 
         margin: 20px;
         cursor: pointer;
@@ -98,7 +100,7 @@ button{
     }
  
     nav li { 
-        float: right;
+        float: left;
         width: 100%;
         text-align: center;
     }
@@ -107,7 +109,7 @@ button{
     }
     .nav-links{
         position: fixed;
-        background: #ffffff; 
+        background: var(--lightbr); 
         height: 100vh; 
         width: 200px; 
         top: 0; 
@@ -121,13 +123,47 @@ button{
         color: var(--second) ;
         margin: 10px;
         font-size: 30px;
-        cursor: pointer;}
+        cursor: pointer;
+        float: right ;
+
+    }
     nav a {
         display: block;
     }
     .logo{
         margin-left: 0px;
     }
+    button{
+        display: none;
+    }
+    .hidenbtn{
+        display: block;
+    }
+    .hidenbtn li {
+        border-radius: 15px;
+    }
+}
+/*************************************************************/
+.langing{
+    overflow: hidden;
+}
+
+.obj{position: absolute;
+    width: 550px;
+    top: 40%;
+    right: 3%;
+    z-index: -10;
+}
+.circle {
+
+    background: var(--second);
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 20%;
+    right: -55px;
+    z-index: -12;
 }
 
    

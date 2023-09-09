@@ -132,6 +132,11 @@ button{
     nav a {
         display: block;
     }
+    .fa-bars{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
     .logo{
         margin-left: 0px;
     }
@@ -149,6 +154,79 @@ button{
     }
 }
 /*************************************************************/
+/*SING UP*/
+.counter-form-sing-up{
+    height: 80%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 0;
+}
+.counter-form-sing-up h2{
+    color: var(--whit);
+    font-size: 45px;
+    text-align: center;
+}
+.counter-form-sing-up form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+	background-color: var(--second);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+    width: 60%;
+	text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.form-input{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+.counter-form-sing-up form select{
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+.btn-sing{
+    border-radius: 15px;
+	margin: 8px 0;
+    width: 100%;
+	background-color: var(--brown);
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+    border: none;
+    display: block;
+}
+.btn-sing:hover{
+    background-color: var(--main);
+}
+.counter-form-sing-up a{
+    color: #DCD7C9;
+}
+
+@media(max-width: 700px){
+    .counter-form-sing-up form{
+        width: 100%;
+    }
+}
+
 /*************************************************************/
 /*************************************************************/
 /*************************************************************/
@@ -234,7 +312,7 @@ button{
 }
 /**/
 .about{
-    background-image: url(/imgs/packging.jpg);
+    background-image: url(/packging.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,7 +398,7 @@ h4 {
 }
 
   .container > div:nth-child(2n) {
-    background-image: url(/imgs/packging.jpg);
+    background-image: url(packging.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

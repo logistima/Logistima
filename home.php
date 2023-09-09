@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php $aboutback = "packging.jpg"; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="icon" href="/imgs/logo/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" sizes="300*300">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Logistima</title>
@@ -12,7 +13,7 @@
 <body>
     <!--menu bar and logo-->
     <nav>
-        <img class="logo" src="/imgs/logo/logo.png" alt="">
+        <img class="logo" src="logo.png" alt="">
 
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -21,19 +22,10 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#">CONTACT</a></li>
-
-                <div class="hidenbtn">
-                    <li><a href="/login.html" class="log">login</a></li>
-                    <li><a href="/login.html" class="reg">Sign up</a></li>
+                <li><a href="logout.php" class="log">logout</a></li>
                 </div>
             </ul>
         </div>
-            <div class="btn">
-                <form action="/login.html">
-                <button class="log">Login</button>
-                <button class="reg">Sign up</button>
-                </form>
-            </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
@@ -49,12 +41,20 @@
             </form>
         </div>
         <div class="mainpac">
-            <img src="/imgs/icons/boxx.png" class="obj">
+            <img src="boxx.png" class="obj">
             <div class="circle"></div>
         </div>
     </section>
     <!--about section-->
     <section class="about" id="about">
+    <style type="text/css">
+    .about {
+        background-image: url('<?php echo $aboutback;?>');
+    }
+    .container > div:nth-child(2n) {
+        background-image: url('<?php echo $aboutback;?>');
+    }
+</style>
         <div class="aboutbox">
             <div>
                <h2>about us</h2>
@@ -78,6 +78,6 @@
         </div>
     </section>
 
-    <script src="/js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -20,7 +20,6 @@
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#Customs_summary">Customs summary</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href = "mailto:logistima1@gmail.com?subject = Feedback&body = Message">CONTACT</a></li>
                 <li><a href="logout.php" class="log">logout</a></li>
@@ -68,9 +67,6 @@
             </div>
         </div>
          
-    </section>
-    <section class="Customs_summary" id="Customs_summary">
-
     </section>
     <section class="services" id="services">
         <h4>Our Services</h4>
